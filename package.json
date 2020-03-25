@@ -5,7 +5,9 @@
   "main": "src/index.html",
   "scripts": {
     "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
     "test": "jest",
+    "coverage": "jest --coverage",
     "format-js": "prettier --write \"{src,components}/**/*.js\""
   },
   "repository": {

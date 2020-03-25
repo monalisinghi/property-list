@@ -1,7 +1,8 @@
 import fetchProperties from './components/fetch-properties';
 import addRemoveProperty from './components/add-remove-property';
 
-var data = {
+// Global data object to create and update property list from
+let data = {
   results: [
     {
       price: '$726,500',
@@ -59,13 +60,17 @@ var data = {
     }
   ]
 };
+
 function init() {
+
+  // Tracks document click events and calls addRemoveProperty function if event target is Add or Remove button
   document.addEventListener('click', function (e) {
     if (e.target.type === 'submit') {
       addRemoveProperty(e.target.parentElement.dataset.id, e.target.textContent, data);
     }
   });
 
+  // Creates initial property cards
   fetchProperties(data);
 }
-window.onload = init();
+window.onload = init(); // initialise application
