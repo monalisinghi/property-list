@@ -5,7 +5,8 @@
   "main": "src/index.html",
   "scripts": {
     "start": "parcel src/index.html",
-    "test": "test"
+    "test": "jest",
+    "format-js": "prettier --write \"{src,components}/*.js\""
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,11 @@
   },
   "homepage": "https://github.com/monalisinghi/property-list#readme",
   "dependencies": {
-    "parcel-bundler": "^1.12.4"
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "babel-jest": "^25.1.0",
+    "jest": "^25.1.0",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.0.2"
   }
 }
