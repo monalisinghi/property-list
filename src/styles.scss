@@ -1,0 +1,215 @@
+// http://meyerweb.com/eric/tools/css/reset/
+//  v2.0 | 20110126
+//  License: none (public domain)
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+// HTML5 display-role reset for older browsers
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 16px;
+	vertical-align: baseline;
+	background: #f0f2f5;
+	line-height: 1;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+		"Segoe UI Symbol";
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.m-b-2 {
+	margin-bottom: 2rem;
+}
+.wrapper {
+	padding: 16px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	min-width: 180px;
+	max-width: 380px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 0.0625rem 0.1875rem 0px;
+	background-color: #ffffff;
+	border-radius: 0.1875rem;
+	position: relative;
+	margin-bottom: 2rem;
+	margin-right: 0.5rem;
+	& button {
+		display: none;
+	}
+	&:hover {
+		& button {
+			display: inline-block;
+		}
+	}
+	& img {
+		border: 0;
+		vertical-align: middle;
+		max-width: 100%;
+	}
+}
+
+.card-footer {
+	background: #fafbfc;
+	padding: 1rem 1.5rem;
+}
+
+.action {
+	position: absolute;
+	bottom: 60px;
+	left: 38%;
+	z-index: 1;
+	padding: 8px 16px;
+	font-size: 16px;
+	border-radius: 4px;
+	background-color: #e4002b;
+	border-color: #e4002b;
+	color: #ffffff;
+	min-width: 120px;
+	&:hover {
+		background-color: #b00020;
+		border-color: #b00020;
+	}
+}
+
+.branding-image {
+	margin: 12px 8px;
+	height: 30px;
+}
+
+.wrapper {
+	display: flex;
+}
+
+.col-6 {
+	display: flex;
+	width: 50%;
+	flex-direction: column;
+	min-width: 220px;
+}

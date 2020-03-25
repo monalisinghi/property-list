@@ -1,4 +1,5 @@
 import fetchProperties from './components/fetch-properties';
+import addRemoveProperty from './components/add-remove-property';
 
 var data = {
   results: [
@@ -59,6 +60,12 @@ var data = {
   ]
 };
 function init() {
+  document.addEventListener('click', function (e) {
+    if (e.target.type === 'submit') {
+      addRemoveProperty(e.target.parentElement.dataset.id, e.target.textContent, data);
+    }
+  });
+
   fetchProperties(data);
 }
 window.onload = init();
