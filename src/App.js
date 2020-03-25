@@ -1,4 +1,5 @@
-import createPropertyCard from './components/create-property-card';
+import fetchProperties from './components/fetch-properties';
+
 var data = {
   results: [
     {
@@ -58,8 +59,6 @@ var data = {
   ]
 };
 function init() {
-  document.querySelector('#results').appendChild(createPropertyCard(data.results[0], 'add'));
-
-  document.querySelector('#saved').appendChild(createPropertyCard(data.saved[0]));
+  fetchProperties(data);
 }
 window.onload = init();

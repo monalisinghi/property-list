@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel src/index.html",
     "test": "jest",
-    "format-js": "prettier --write \"{src,components}/*.js\""
+    "format-js": "prettier --write \"{src,components}/**/*.js\""
   },
   "repository": {
     "type": "git",
